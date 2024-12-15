@@ -1,8 +1,9 @@
-﻿namespace Symbotic.CPI.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace Symbotic.CPI.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+    public string Greeting { get; set; } = "Welcome to Avalonia!";
+
 }
