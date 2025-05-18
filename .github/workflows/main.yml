@@ -1,0 +1,14 @@
+name: hell-cpi
+
+on: push
+
+jobs:
+  hello-cpi-job:
+
+    runs-on: windows-latest
+
+    steps:
+      - name: check out repository code
+        uses: actions/checkout@v3
+
+      - run: echo 'testing workflow'       
